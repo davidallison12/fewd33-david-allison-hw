@@ -1,0 +1,241 @@
+body{
+  font-family:'Open Sans', sans-serif;
+  height:2500px;
+  margin:0;
+  padding:0;
+}
+
+
+
+
+header{
+  margin:0px;
+  padding:0px;
+  height:32%;
+
+
+/*Background water image centered size:cover*/
+}
+div.header_background{
+  background:url('../images/header_bg.jpg');
+  background-position: center;
+  background-size:cover;
+  height:100%;
+  padding:0px;
+  margin:0 auto;
+}
+
+
+
+/*Relaxr Logo Font and Header Color*/
+h1.Relaxr_logo{
+  font-weight: 800;
+  font-size: 24px;
+  margin:0;
+  padding:30px 0px 0px 80px;
+}
+/*Makes header logo white*/
+h1.white{
+  color: white;
+}
+
+
+/*Moves Slogan text to center*/
+div.slogan{
+  text-align: center;
+  margin-top: 180px
+}
+
+
+/*Slogan Color /Semoibold and size*/
+h2.slogan{
+  color: white;
+  font-size:50px;
+  font-weight:600;
+}
+
+
+
+/*Yellow Background/Font size and weight/centering/margin top 50px/width 200px*/
+p.button{
+  background-color: #f9e42e;
+  border-radius:5px;
+  font-size:20px;
+  font-weight:800;
+  height:30px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 10px;
+  text-align: center;
+  width:200px;
+}
+
+/*div.header_background{
+  background:url('../images/header_bg.jpg');
+  background-size:100%;
+  padding:0px;
+  margin:0 auto;
+
+}*/
+
+
+
+
+
+
+/*Start of the main section*/
+main{
+  height:52%;
+  margin:0px;
+  padding:0px;
+}
+
+
+
+
+
+/*benefits background color/0 margin/0padding */
+section.benefits_section{
+  height:55%;
+  margin:0;
+  padding:0;
+}
+
+div.benefits{
+  display:block;
+  padding: 100px 0px 0px 100px;
+}
+
+/*Benefits heading Semibold and Size*/
+h3{
+  font-weight:600;
+  font-size: 30px;
+  margin-top: 0px;
+}
+/*Benefits list Light and 20px*/
+div.benefits_list{
+  font-size:20px;
+  font-weight:200;
+  line-height: 130%;
+  width: 60%;
+}
+
+
+/*List Padding 25top60left*/
+
+ul{
+  padding: 25px 0px 0px 60px;
+
+}
+
+
+
+
+/*Quote Section */
+
+section.quote_section{
+  background-color: #033048;
+  font-size: 18px;
+  height:35%;
+  position:relative;
+}
+
+div.quote{
+  color: white;
+  position:absolute;
+  text-align: center;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+article.quote{
+  font-style:italic;
+  font-weight:200;
+}
+
+/*Line weight of "Amanda Intuit"*/
+h4{
+  font-weight: 600;
+}
+
+
+
+/*Call to Action Section*/
+section.CTA_section{
+  background-color: #f9e42e;
+  height:10%;
+  position:relative;
+}
+
+
+/*Moves button center-center/adds turquoise background and radius*/
+div.CTA{
+  background-color: #033048;
+  border-radius:5px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+}
+
+
+/*Button Text White, ExtraBold, 12px*/
+h5{
+  color: white;
+  font-size:12px;
+  font-weight:800;
+  text-align: center;
+}
+
+
+
+
+/*Footer background and height*/
+footer{
+  background-color: #121212;
+  height:16%;
+}
+
+
+/*Relaxr color:yellow/centeering and eliminating margin*/
+h1.yellow{
+  color: #f9e42e;
+  text-align: center;
+  margin-top: 0px;
+  padding: 50px 0px 30px 0px;
+}
+
+
+/*Centering Social Media logos and making width 10%*/
+div.social_media{
+  margin:0 auto;
+  width:10%;
+}
+
+/*Padding to seperate facebook logo*/
+img.facebook{
+  padding: 0px 0px 0px 40px;
+}
+
+
+/*Copyright: White/Center/Font*/
+h6{
+  color:white;
+  font-size: 9px;
+  font-weight:600;
+  margin:100px 0px 0px auto;
+  text-align:center;
+}
+
+
+/*img.twitter{
+  display: block;
+  margin:0
+
+img.facebook{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/

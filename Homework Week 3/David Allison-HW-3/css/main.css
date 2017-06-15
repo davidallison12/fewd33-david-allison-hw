@@ -1,0 +1,227 @@
+body{
+  height:1713px;
+  width:100vw;
+}
+
+/*.flex{
+  display: flex;
+  justify-content: flex-end;
+}*/
+
+header{
+  background-color: black;
+  border-bottom: 8px solid #ffff4d;
+  height:11%;
+
+}
+.logo-yellow{
+  color:#ffff4d;
+}
+h1{
+  font-family: "Times New Roman", serif;
+  font-size: 50px;
+  margin:0px;
+  padding:20px 40px;
+}
+/*.flex-header{
+  display:flex;
+  justify-content: flex-start;
+}*/
+
+
+
+/*#################################*/
+/*###### Navigation Section #######*/
+/*#################################*/
+
+.flex-nav{
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-menu{
+  margin:0;
+}
+
+nav{
+  color:white;
+  font-family:"Arial", sans-serif;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-right: 2%;
+}
+h2{
+  font-weight: bold;
+}
+h3{
+  font-weight: lighter;
+}
+
+
+
+/*#################################*/
+/*######### Main Section ##########*/
+/*#################################*/
+
+
+
+main{
+  height:83%;
+  width:100%;
+}
+
+
+
+/*############################*/
+/*###### Quote Section #######*/
+/*############################*/
+
+.first-main-section{
+  align-items: center;
+  background-color:#b3b3b3;
+  display:flex;
+  height:9%;
+  justify-content: center;
+}
+
+.brains-cliche{
+  font-family: "TImes New Roman", serif;
+  font-size: 45px;
+  font-weight: bold;
+  margin:0;
+}
+.gray-strikethrough{
+  color:gray;
+  text-decoration: line-through;
+  text-decoration-color: gray;
+}
+
+.yellow-underline{
+  text-decoration: underline;
+  text-decoration-color: #ffff4d;
+}
+
+
+/*############################*/
+/*###### Image Section #######*/
+/*############################*/
+
+
+.image-section{
+  font-family:"Calibri",sans-serif;
+  height:51%;
+}
+
+.image-background{
+  align-items: center;
+  background: url("../images/coworking.jpg");
+  /*background-position: center;*/
+  background-size:cover;
+  display:flex;
+  justify-content: flex-end;
+  height:100%;
+  padding:0px;
+  width:100vw;
+}
+
+.image-text-container{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid gray;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial",sans-serif;
+  height:70%;
+  margin-right: 30px;
+  padding: 60px 40px;
+  width: 34vw;
+}
+
+.image-title{
+  font-size: 45px;
+  padding-top: 40px;
+  margin:0;
+}
+.image-paragraph{
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 1.5;
+  /*padding: 0 30px 0 0px;*/
+}
+
+.CTA-button{
+  align-items: center;
+  background-color: #ffff4d;
+  border-bottom: 3px solid #cccc00;
+  border-radius: 5px;
+  display: flex;
+  font-size: 21px;
+  font-weight: 700;
+  height:13%;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+}
+
+.third-main-section{
+  align-items: center;
+  display: flex;
+  height:40%;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.triple-splits{
+  padding-left: 20px;
+  padding-right: 15px;
+}
+.silver-border{
+  border-left: 2px  solid lightgray;
+}
+
+.triples-para{
+  font-family: "Arial",sans-serif;
+  line-height: 50px;
+  font-size: 30px;
+}
+.CTA-button-2{
+  align-items: center;
+  background-color: lightgray;
+  border-bottom: 3px solid gray;
+  border-radius: 5px;
+  display: flex;
+  font-size: 21px;
+  font-weight: 700;
+  height:50px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+.gray-button{
+  justify-content: center;
+}
+h5{
+  font-family: "Times New Roman",serif;
+  font-size: 40px;
+}
+
+
+footer{
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  height:6%;
+}
+
+.footer-text{
+  color:white;
+  font-family: "Arial", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.image-bg{
+
+}

@@ -1,0 +1,55 @@
+
+
+body{
+  background:#232323;
+}
+
+
+header{
+  background:none;
+  text-align: center;
+
+}
+
+/*Title Block at top*/
+h1{
+  color: rgba(244,244,240,0.7);
+  font-family:Lobster; cursive;
+  font-size: 50px;
+  text-decoration:underline;
+}
+
+
+h2{
+  /*color: rgba(111,231,219, 0.5);*/
+  color:rgb(196,173,201);
+  font-family:Lobster; cursive;
+}
+
+/*Inline Menu*/
+ul{
+  color: rgb(0,0,0);
+  padding:5px;
+  /*margin-bottom: 20px;*/
+}
+
+
+li{
+  color: rgb(244,244,240);
+  display:inline;
+  font-family: Lobster, cursive;
+  font-size: 25px;
+  padding: 0px 10px 0px 10px;
+}
+
+/*Body*/
+hr{
+  margin-bottom: 0px;
+}
+h3{
+  color: rgba(111,231,219, 0.9);
+  /*rgb(196,173,201);*/
+  font-family: Lobster; cursive;
+  font-size: 40px;
+  text-align: center;
+}
