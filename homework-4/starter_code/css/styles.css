@@ -6,14 +6,203 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .relaxr-header{
+  align-items: center;
   background-color: #033048;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
   width:100vw;
 }
 
 .relaxr-logo-container{
-  width:30vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right:60px;
+  width:40vw;
 }
 
 .relaxr-logo{
   color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.relaxr-nav-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding:30px;
+  width:60vw;
+}
+.relaxr-nav-element{
+  color:#f9e42e;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+.relaxr-main{
+  align-items: flex-start;
+  background-color: #f0efef;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width:100vw;
+}
+
+/*####################################
+########### Main Section ###########
+####################################*/
+.relaxr-blog-container{
+  align-items: flex-start;
+  display:flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  padding: 50px 0 0 5vw;
+  margin-right: 2vw;
+  width:64.5vw;
+}
+
+.relaxr-main-container-split{
+  height:1900px;
+}
+
+/*#################################
+###### Blog Posts Section #######
+#################################*/
+.relaxr-blog-post{
+  align-items: flex-start;
+  display: flex;
+  height: 875px;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*margin-bottom: 50px;*/
+}
+
+.relaxr-blog-header{
+  color:#033048;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.relaxr-blog-header-1{
+  padding-top: 20px;
+}
+
+.relaxr-blog-post-images{
+  padding: 30px 0 20px 0;
+  width:100%;
+}
+
+.relaxr-blog-maincontent{
+  color:black;
+  font-size:24px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+.relaxr-blog-maincontent-link-container{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  width:100%;
+}
+.relaxr-blog-maincontent-link{
+  color:#033048;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+.relaxr-blog-divider-1{
+  background-color:#033048;
+  height:1px;
+
+  width:100%;
+}
+
+.relaxr-blog-header-2{
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.relaxr-blog-divider-2{
+  background-color:#033048;
+  height:1px;
+  margin-top: 90px;
+  width:100%;
+}
+
+
+
+/*#########################################
+############# Aside Section #############
+#########################################*/
+
+.relaxr-aside-container{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height:700px;
+  justify-content: flex-start;
+  padding: 45px 3.5vw 0 0;
+  width:23vw;
+}
+
+.relaxr-categories-container{
+  height:300px;
+  margin-bottom: 60px;
+}
+
+.relaxr-aside-header{
+  color:#033048;
+  font-size:32px;
+  font-weight:800;
+}
+.relaxr-categories-header{
+  padding-bottom: 20px;
+}
+
+.relaxr-category-element-container{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.relaxr-category-element{
+  color:#033048;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 0 10px 0;
+}
+.relaxr-about-container{
+  margin-bottom: 80px;
+}
+
+.relaxr-about-content{
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom:0;
+}
+.relaxr-about-link{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.relaxr-CTA-container{
+  align-self: flex-end;
+  background-color: #f9e42e;
+  width:100vw;
 }
