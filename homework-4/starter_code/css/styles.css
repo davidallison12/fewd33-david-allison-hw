@@ -1,0 +1,19 @@
+body{
+  font-family: 'Open Sans' ,sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  margin:0;
+}
+
+.relaxr-header{
+  background-color: #033048;
+  width:100vw;
+}
+
+.relaxr-logo-container{
+  width:30vw;
+}
+
+.relaxr-logo{
+  color: white;
+}
