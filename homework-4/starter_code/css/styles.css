@@ -9,12 +9,12 @@ h1, h2, h3, h4, h5, h6{
   align-items: center;
   background-color: #033048;
   display: flex;
-  height: 90px;
+  height: 80px;
   justify-content: space-between;
   width:100vw;
 }
 
-.relaxr-logo-container{
+.relaxr-logo-container-header{
   align-items: center;
   display: flex;
   justify-content: center;
@@ -22,8 +22,11 @@ h1, h2, h3, h4, h5, h6{
   width:40vw;
 }
 
-.relaxr-logo{
+.relaxr-logo-header{
   color: white;
+}
+
+.relaxr-logo{
   font-size: 50px;
   font-weight: 800;
 }
@@ -37,7 +40,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .relaxr-nav-element{
   color:#f9e42e;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -103,6 +106,15 @@ h1, h2, h3, h4, h5, h6{
   font-size:24px;
   font-weight: 300;
   line-height: 1.55;
+}
+
+/*Used this pseudo code in order to create larger stylized first letter for both blog posts*/
+.relaxr-blog-maincontent::first-letter{
+  float:left;
+  font-size: 72px;
+  font-weight: 600;
+  padding-right: 6px;
+
 }
 
 .relaxr-blog-maincontent-link-container{
@@ -226,11 +238,72 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .relaxr-CTA-button:hover{
-  background-color: #022030;
+  background-color: #044060;
+  border-bottom: 4px solid #044060;
 }
 
 .relaxr-CTA-button-text{
   color:white;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 800;
+}
+
+
+
+
+.relaxr-footer{
+  align-items: center;
+  background-color:#121212;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  width:100vw;
+}
+
+.relaxr-logo-container-footer{
+  text-align: center;
+  margin-top: 30px;
+  width:50vw;
+}
+
+.relaxr-logo-footer{
+  color:#f9e42e;
+}
+
+.social-media-container{
+  align-items:center;
+  display: flex;
+  height:40px;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-right: 2vw;
+  width:12vw;
+}
+
+.social-media-element-twitter{
+  padding-right: 5vw;
+}
+
+.social-media-element-facebook{
+  /*padding-left: 5vw;*/
+}
+
+.relaxr-copyright-container{
+  align-items: flex-end;
+  /*align-self: flex-end;*/
+  display: flex;
+  justify-content: center;
+  height:130px;
+  width:50vw;
+}
+
+.relaxr-copyright{
+  color:white;
+  font-size: 20px;
+  font-weight:300;
+  margin: 0;
+  /*height:0;*/
+  /*margin-top:100px;*/
+  /*padding-top: 30px;*/
 }
