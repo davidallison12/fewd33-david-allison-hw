@@ -1,0 +1,323 @@
+body{
+  font-family: 'Open Sans' ,sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+  margin:0;
+}
+
+/*####################################
+########### Header Section ###########
+####################################*/
+
+
+
+.relaxr-header{
+  align-items: center;
+  background-color: #033048;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width:100vw;
+}
+
+
+/*###### Logo container + Header Logo #######*/
+
+.relaxr-logo-container-header{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-right:60px;
+  width:40vw;
+}
+
+/*Added seperate class so I could change the color of both "Relaxr" logos seperately*/
+.relaxr-logo-header{
+  color: white;
+}
+
+.relaxr-logo{
+  font-size: 50px;
+  font-weight: 800;
+}
+
+
+/*####### Relaxr Nav Container + all of the Nav Elements ######*/
+.relaxr-nav-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding:30px;
+  width:60vw;
+}
+.relaxr-nav-element{
+  color:#f9e42e;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*####################################
+########### Main Section ###########
+####################################*/
+
+.relaxr-main{
+  align-items: flex-start;
+  background-color: #f0efef;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width:100vw;
+}
+
+/*####################################
+########### Blog Section ###########
+####################################*/
+.relaxr-blog-container{
+  align-items: flex-start;
+  display:flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  padding: 50px 0 0 5vw;
+  margin-right: 2vw;
+  width:64.5vw;
+}
+
+.relaxr-main-container-split{
+  height:1900px;
+}
+
+/*#################################
+###### Blog Posts Section #######
+#################################*/
+.relaxr-blog-post{
+  align-items: flex-start;
+  display: flex;
+  height: 875px;
+  flex-direction: column;
+  justify-content: flex-start;
+  /*margin-bottom: 50px;*/
+}
+
+.relaxr-blog-header-text{
+  color:#033048;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.relaxr-blog-header-text-1{
+  padding-top: 20px;
+}
+
+.relaxr-blog-post-images{
+  padding: 30px 0 20px 0;
+  width:100%;
+}
+
+.relaxr-blog-maincontent{
+  color:black;
+  font-size:24px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+
+/*Used this pseudo code in order to create larger stylized first letter for both blog posts*/
+.relaxr-blog-maincontent::first-letter{
+  float:left;
+  font-size: 72px;
+  font-weight: 600;
+  padding-right: 6px;
+
+}
+
+.relaxr-blog-maincontent-link-container{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  width:100%;
+}
+.relaxr-blog-maincontent-link{
+  color:#033048;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+/*I had a hard time trying to get these dividers to line up. I ended up having to seprate them both and work with them seperately.*/
+.relaxr-blog-divider-1{
+  background-color:#033048;
+  height:1px;
+
+  width:100%;
+}
+
+.relaxr-blog-header-text-2{
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+/*When I had the dividers joined together, I was unable to see this one even though I gave it a height. Only way I could see it was whn I used a negative value in padding-top*/
+.relaxr-blog-divider-2{
+  background-color:#033048;
+  height:1px;
+  margin-top: 90px;
+  width:100%;
+}
+
+
+
+/*#########################################
+############# Aside Section #############
+#########################################*/
+
+.relaxr-aside-container{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height:700px;
+  justify-content: flex-start;
+  padding: 45px 3.5vw 0 0;
+  width:23vw;
+}
+
+.relaxr-categories-container{
+  height:300px;
+  margin-bottom: 60px;
+}
+
+.relaxr-aside-header{
+  color:#033048;
+  font-size:32px;
+  font-weight:800;
+}
+.relaxr-categories-header{
+  padding-bottom: 20px;
+}
+
+.relaxr-category-element-container{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.relaxr-category-element{
+  color:#033048;
+  font-size: 24px;
+  font-weight: 300;
+  padding: 0 0 10px 0;
+}
+.relaxr-about-container{
+  margin-bottom: 80px;
+}
+
+.relaxr-about-content{
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom:0;
+}
+.relaxr-about-link{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+
+
+/*###########################################
+########## Call to Action Section #########
+############################################*/
+
+.relaxr-CTA-container{
+  align-items: center;
+  align-self: flex-end;
+  background-color: #f9e42e;
+  display: flex;
+  height:100px;
+  justify-content: center;
+  width:100vw;
+}
+
+.relaxr-CTA-button{
+  align-items: center;
+  background-color: #033048;
+  border-bottom: 4px solid #022030;
+  border-radius: 5px;
+  display: flex;
+  height:48%;
+  justify-content: center;
+  width:25vw;
+}
+
+.relaxr-CTA-button:hover{
+  background-color: #044060;
+  border-bottom: 4px solid #044060;
+}
+
+.relaxr-CTA-button-text{
+  color:white;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+
+
+
+.relaxr-footer{
+  align-items: center;
+  background-color:#121212;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  width:100vw;
+}
+
+.relaxr-logo-container-footer{
+  text-align: center;
+  margin-top: 30px;
+  width:50vw;
+}
+
+.relaxr-logo-footer{
+  color:#f9e42e;
+}
+
+.social-media-container{
+  align-items:center;
+  display: flex;
+  height:40px;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-right: 2vw;
+  width:12vw;
+}
+
+.social-media-element-twitter{
+  padding-right: 5vw;
+}
+
+.social-media-element-facebook{
+  /*padding-left: 5vw;*/
+}
+
+.relaxr-copyright-container{
+  align-items: flex-end;
+  /*align-self: flex-end;*/
+  display: flex;
+  justify-content: center;
+  height:130px;
+  width:50vw;
+}
+
+.relaxr-copyright{
+  color:white;
+  font-size: 20px;
+  font-weight:300;
+  margin: 0;
+  /*height:0;*/
+  /*margin-top:100px;*/
+  /*padding-top: 30px;*/
+}
