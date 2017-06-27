@@ -135,11 +135,11 @@ h1, h2, h3, h4, h5, h6{
   margin-top: 20px;
   width:100%;*/
 }
-
+/*
 #readMore2{
   width:100%;
   text-align: right;
-}
+}*/
 
 
 .relaxr-blog-maincontent-link{
@@ -230,6 +230,14 @@ a{
   font-size:24px;
   font-weight: 300;
   line-height: 1.55;
+}
+
+.extraText1{
+  margin-top: 15px;
+}
+
+.extraText2{
+  margin-top:15px;
 }
 
 /*#########################################
