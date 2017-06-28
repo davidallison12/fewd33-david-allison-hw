@@ -69,13 +69,14 @@ h1, h2, h3, h4, h5, h6{
   width:64.5vw;
 }
 
-/*.relaxr-main-container-split{
-  height:1900px;
-}*/
+
 
 /*#################################
 ###### Blog Posts Section #######
 #################################*/
+
+/*Flex's the whole main blog section in a column on the top left. Added a margin bottom in order to Push down text in footer*/
+
 .relaxr-blog-post{
   align-items: flex-start;
   display: flex;
@@ -85,14 +86,7 @@ h1, h2, h3, h4, h5, h6{
   justify-content: flex-start;
   margin-bottom: 114px;
 }
-.relaxr-blog-post-2{
-  height:300px;
-  /*margin-bottom: 700px;*/
-}
 
-/*.relaxr-blog-post2{
-  margin-bottom:600px;
-}*/
 
 .relaxr-blog-header{
   color:#033048;
@@ -105,19 +99,20 @@ h1, h2, h3, h4, h5, h6{
   padding-top: 20px;
 }
 
+
 .relaxr-blog-post-images{
   padding: 30px 0 20px 0;
   width:100%;
 }
 
-.relaxr-blog-maincontent{
+
+/*Styles blog article text */
+.relaxr-blog-text{
   color:black;
   font-size:24px;
   font-weight: 300;
   line-height: 1.55;
 }
-
-
 
 /*Used this pseudo code in order to create larger stylized first letter for both blog posts*/
 .relaxr-blog-maincontent::first-letter{
@@ -125,67 +120,29 @@ h1, h2, h3, h4, h5, h6{
   font-size: 72px;
   font-weight: 600;
   padding-right: 6px;
-
 }
 
-/*.relaxr-blog-maincontent-link-container{
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
-  width:100%;*/
-}
-/*
-#readMore2{
-  width:100%;
-  text-align: right;
-}*/
 
-
-.relaxr-blog-maincontent-link{
-  color:#033048;
-  font-size: 24px;
-  font-weight: 600;
-
-}
 .hide{
   display: none;
 }
 
 
 
-
-/*######## Added this in order to move margin-top of CTA Container*/
-/*.margin-top{*/
-  /*margin-top: 25px;*/
-/*}*/
-/*I had a hard time trying to get these dividers to line up. I ended up having to seprate them both and work with them seperately.*/
-.relaxr-blog-divider-1{
-  background-color:#033048;
-  height:1px;
-
-  width:100%;
-}
-
 .relaxr-blog-header-2{
   padding-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px auto 20px auto;
 }
 
-/*When I had the dividers joined together, I was unable to see this one even though I gave it a height. Only way I could see it was whn I used a negative value in padding-top*/
-.relaxr-blog-divider-2{
-  background-color:#033048;
-  height:1px;
-  margin-top: 90px;
-  width:100%;
-}
+
+/*###################################
+########## Blog Dividers ##########*/
+
+
 
 hr{
-  /*height:100%;*/
   margin-top: -59px;
-  /*transform: rotate(90deg);*/
   width:100%;
-
 }
 
 .relaxr-divider-2{
@@ -194,43 +151,21 @@ hr{
   width:100%;
 }
 
-#readMore1 {
-  width:100%;
-  text-align: right;
-
-}
-
-#readLess1 {
-  width:100%;
-  text-align: right;
-}
-
-#readMore2 {
-  width:100%;
-  text-align: right;
-}
-
-#readLess2 {
-  width:100%;
-  text-align: right;
-}
 a{
   cursor: pointer;
 }
 
+
+/*'Read More' and 'Read Less' text styling and text align right */
 .relaxr-blog-link-text{
   color:#033048;
   font-size: 24px;
   font-weight: 600;
+  text-align: right;
+  width: 100%;
 
 }
 
-.relaxr-blog-text{
-  color:black;
-  font-size:24px;
-  font-weight: 300;
-  line-height: 1.55;
-}
 
 .extraText1{
   margin-top: 15px;
