@@ -16,8 +16,6 @@ $("#submit-btn").click(function(){
 
   else if (city == "sf" || city == "bay area") {
       $("body").removeClass("nyc").addClass("sf");
-      // $("body").addClass("sf");
-      // $("body").removeClass("nyc");
       console.log(city);
   }
 
