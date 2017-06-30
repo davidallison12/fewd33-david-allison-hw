@@ -14,7 +14,7 @@ $("#submit-btn").click(function(){
     console.log(city);
   }
 
-  else if (city == "sf" || city == "bay area") {
+  else if (city == "sf" || city == "bay area" || city == "san francisco") {
       $("body").removeClass("nyc").addClass("sf");
       console.log(city);
   }
@@ -31,5 +31,6 @@ $("#submit-btn").click(function(){
     $("body").removeClass("nyc"&&"sf"&&"la"&&"austin").addClass("sydney");
     console.log(city);
   }
-
+  var form = document.getElementById('city-form');
+  form.reset();
 });
