@@ -20,6 +20,7 @@ header{
   bottom:inherit;
   right: 0;
   position: fixed;
+  z-index: 1;
 }
 
 
@@ -29,11 +30,14 @@ header{
 }
 
 .nav-elements-container{
+  display: block;
+  opacity:1;
   margin-right:50px;
 }
 .nav-elements{
   color: white;
   margin: 0 15px;
+  opacity: 1;
   text-decoration: none;
 }
 .nav-elements:hover{
@@ -41,6 +45,10 @@ header{
 }
 .nav-elements:last-child{
   margin-right: 40px;
+}
+.disable-click{
+  display: none;
+  pointer-events: none;
 }
 
 /*########################################
@@ -51,9 +59,13 @@ header{
   background-image: url(../images/secondhand-hope/secondhand-hope-7.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   display:flex;
   justify-content: flex-end;
+}
+
+.parallax--bg{
+  transition: 0.0s ease;
 }
 .viewing-container{
 
@@ -64,6 +76,9 @@ header{
   text-align:left;
   margin-right: 10%;
   width:30vw;
+}
+#showSynopsis{
+  opacity: 1;
 }
 
 .clarice-logo{
@@ -101,30 +116,73 @@ header{
 
 .details-container{
   align-items: center;
-  background-color: white;
+  background-color: #e6e6e6;
   color:black;
   display: flex;
   font-family:'Open Sans Condensed', sans-serif;
   font-weight: 300;
-  height: 50vh;
+  height: 60vh;
   justify-content: center;
+  /*margin-bottom: 97vh;*/
 }
 .show-details-container{
-  margin: 0 0 0 10vw;
+  background-color: #AE4611;
+  color: white;
+  height: 50vh;
+  margin: 0 10vw 0 0;
+  width:90vw;
+
 }
+
+.show-title{
+  margin-top: 0;
+}
+
+/*.show-details-container-active{
+  background-color: #AE4611;
+  color: white;
+  margin: 0 40vw 0 0;
+  width:60vw;
+}*/
+
+
+
+.show-detail-element{
+  margin-left: 45vw;
+}
+
+
 
 .show-details{
   font-family:'Open Sans Condensed', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  color:black;
+  /*color:black;*/
 }
+
+/* SPECIAL EFFECTS*/
+
+.show-details-effects{
+  opacity:0;
+  transform: translateX(-100%);
+  transition: 0.8s ease-in-out;
+}
+.show-details-effects-active{
+  opacity:1;
+  transform: translateX(0%);
+}
+
+
+
 
 /*############# Gallery/Flickity #############*/
 .gallery-container{
   height: 97vh;
   margin: 0 0 7vh 0;
+  /*position: fixed;*/
+
   width: 100%;
+  /*z-index: -1;*/
 }
 .carousel-cell{
   align-items: center;
@@ -175,7 +233,7 @@ header{
 
 footer{
   align-items: center;
-  background-color: white;
+  background-color: #e6e6e6;
   display:flex;
   flex-direction: column;
   height:20vh;

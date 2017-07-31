@@ -1,13 +1,8 @@
-
-
 body{
   color: white;
-  background-color: black;
+  background-color: #08080A;
   /*background:url("");*/
 }
-
-
-
 /*########################################
 ############### HEADER #################
 ########################################*/
@@ -17,6 +12,12 @@ header{
   display: flex;
   font-family: 'Mrs.Sheppards',cursive;
   justify-content: space-between;
+  top: inherit;
+  left: 0;
+  bottom:inherit;
+  right: 0;
+  position: fixed;
+  z-index: 1;
 }
 
 
@@ -26,11 +27,14 @@ header{
 }
 
 .nav-elements-container{
+  display: block;
+  opacity:1;
   margin-right:50px;
 }
 .nav-elements{
   color: white;
   margin: 0 15px;
+  opacity: 1;
   text-decoration: none;
 }
 .nav-elements:hover{
@@ -39,30 +43,242 @@ header{
 .nav-elements:last-child{
   margin-right: 40px;
 }
+.disable-click{
+  display: none;
+  pointer-events: none;
+}
 
-/*########################################
-################# MAIN ###################
-#########################################*/
+/*###################################################################
+################# MAIN/FLICKITY FLICKITY CAROUSEL ###################
+#####################################################################*/
 
-.main-container{
+.landing-profile{
+  align-items: center;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+}
+
+.parallax--bg{
+  transition: 0.0s ease;
+}
+.viewing-container{
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 87vh;
+  margin: 6vh 2.5vw 0 2.5vw;
+  width:95vw;
+}
+
+.carousel-element-container{
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/*EACH BACK GROUND IMAGE USED IN CAROUSEL */
+.secondhand-bg{
+  background-image: url("../images/secondhand-hope/secondhand-hope-5.jpg");
+}
+
+.normal-magic-bg{
+  background-image: url("../images/normal-magic/normal-magic-1.jpg");
+}
+
+.bozo-bg{
+  background-image: url("../images/bozo/bozo-4.jpg");
+}
+
+/*THis is the containeris the part that carousels. Each image  and details will be contained in. */
+.flickity-details-container{
+  align-items: flex-end;
+  background-color: rgba(64,64,64,0.6);
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: center;
+  text-align: right;
+}
+.detail-reveal-element{
+  margin-right:5% ;
+}
+
+.show-title{
+  font-size:50px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.show-description{
+  font-size: 18px;
+  line-height: 1.2;
+}
+.show-view-more{
+  font-size: 23px;
+  text-decoration: underline;
+}
+/*###########################################
+############  ABOUT ME SECTION ##############
+#############################################*/
+
+.about-me-container{
+  align-items: center;
+  background-color: #e6e6e6;
+  color:black;
+  display: flex;
+  font-family:'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  height: 90vh;
+  justify-content: space-around;
+}
+
+.about-me-image-container{
+  height: 70%;
+}
+.about-me-image{
+  height: 100%;
+}
+
+.about-me-details-container{
+  height: 80%;
+  width: 40vw;
+}
+
+.about-me-name{
+  font-size: 30px;
+}
+.about-me-bio{
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.gallery-main-section{
+  color: white;
+  font-family:'Open Sans Condensed', sans-serif;
+  height: 200vh;
+  margin: 0 2vw 7vh 2vw;
+  width: 100%;
+}
+
+.lighting-design-gallery-container{
+  height: 30%;
+  width:100%;
+}
+.gallery-title{
+  font-size: 40px;
+  font-weight: 700;
+}
+.gallery-container{
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  /*margin: 0 1vw;*/
+  justify-content: flex-start;
+}
+
+.gallery-images{
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  height: 100%;
+  margin: 2vh 1vw;
+  width: 22vw;
+}
+
+.image-overlay{
+  align-items: center;
+  background: white;
+  color: black;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  p
+  width: 100%;
+}
+
+.opacity-effect{
+  opacity: 0
+}
+.opacity-effect:hover{
+  opacity: 0.6
+}
+
+/*EACH BACK GROUND IMAGE USED IN LIGHTING DESIGN PORTION */
+.secondhand-bg-2{
+  background-image: url("../images/secondhand-hope/secondhand-hope-1.jpg");
+}
+
+.normal-magic-bg-2{
+  background-image: url("../images/normal-magic/normal-magic-6.jpg");
+}
+
+.bozo-bg-2{
+  background-image: url("../images/bozo/bozo-2.jpg");
+}
+
+.crooked-bg{
+  background-image: url("../images/crooked/crooked-1.jpg");
+}
+.looking-glass-bg{
+  background-image: url("../images/through-the-looking-glass/through-the-looking-glass-2.jpg");
+}
+
+
+
+
+/*############# CALL TO ACTION #############*/
+.cta-section{
+  align-items: center;
+  background-color: #A0471F;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+}
+.cta-question{
+  color: black;
+  font-family:'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  margin:0 30px 0 0;
+}
+.contact-me-button{
+  border: 3px solid black;
+  color:black;
+  font-family:'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  height: 40px;
+  text-align: center;
+  width:15vw;
+}
+
+/*###################################
+############## Footer #############
+###################################*/
+
+footer{
+  align-items: center;
+  background-color: #e6e6e6;
+  display:flex;
+  flex-direction: column;
+  height:20vh;
+  justify-content: center;
+}
+
+.footer-logo{
+  color:black;
+  font-family: 'Mrs.Sheppards',cursive;
+  font-size: 24px;
+}
+
+.social-media-elements-container{
   align-items: center;
   display: flex;
-  font-family: 'Mrs.Sheppards',cursive;
-  font-size: 35px;
-  height: 80vh;
   justify-content: space-around;
-  text-align:center;
+  width: 15vw;
 }
-.welcome-text{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size:30px;
-}
-.main-headshot{
-  width: 30vw;
-}
-.welcome-directions{
-  font-size: 15px;
-  font-style: italic;
-  margin-top: 40px;
-  padding-top: 70px;
+.social-media-elements{
+  width: 2vw;
 }

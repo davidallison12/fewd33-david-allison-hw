@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ENTRANCE | David Allison Lighting</title>
+  <title>Main | David Allison Lighting</title>
   <link href="https://fonts.googleapis.com/css?family=Mrs+Sheppards|Open+Sans+Condensed:300,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header class="main-logo-container">
-      <h1 class="main-logo">David Allison Lighting</h1>
+      <h1 class="main-logo" id="mainLogo">David Allison Lighting</h1>
         <nav class="nav-element-container">
           <a href="../  /index.html" class="nav-elements">Home</a>
           <a href="../  /index.html" class="nav-elements">About Me</a>
@@ -16,22 +17,93 @@
           <a href="../  /index.html" class="nav-elements">Contact</a>
         </nav>
       </header>
+
+
       <main class="main-container">
-        <div>
-          <h2>David Allison Lighting<h2>
-          <p class="welcome-text">Welcome to my portfolio site! Have fun looking around</p>
-          <p class="welcome-directions">Start scrolling to take a look at my portfolio, and let's create something big together.</p>
-        </div>
-        <div>
-          <img class="main-headshot" src="images/david-headshot.jpg">
-        </div>
+        <section class="landing-profile parallax--bg">
+
+<!-- THE CONTAINER FOR FLICKITY ELEMENTS. THERE WILL ALSO BE HIDDEN DESCRIPTIONS THAT SLIDE UP AND DOWN -->
+          <div class="viewing-container main-carousel">
+
+            <div class="carousel-cell carousel-element-container secondhand-bg">
+              <div class='flickity-details-container'>
+                <h2 class="show-title detail-reveal-element">SECONDHAND HOPE</h2>
+                <p class="show-description detail-reveal-element">Forage try-hard tousled heirloom. Ethical iPhone offal, ramps cornhole biodiesel farm-to-table sriracha gentrify DIY synth single-origin coffee cray 3 wolf moon shabby chic. Food truck photo booth lyft 8-bit trust fund hella iPhone quinoa mustache pug edison bulb tumblr poutine.</p>
+                <h3 class="show-view-more detail-reveal-element"><a>VIEW MORE >></a></h3>
+              </div>
+            </div>
+
+            <div class="carousel-cell carousel-element-container normal-magic-bg">
+              <div class='flickity-details-container'>
+                <h2 class="show-title detail-reveal-element">NORMAL/MAGIC</h2>
+                <p class="show-description detail-reveal-element">Forage try-hard tousled heirloom. Ethical iPhone offal, ramps cornhole biodiesel farm-to-table sriracha gentrify DIY synth single-origin coffee cray 3 wolf moon shabby chic. Food truck photo booth lyft 8-bit trust fund hella iPhone quinoa mustache pug edison bulb tumblr poutine.</p>
+                <h3 class="show-view-more detail-reveal-element"><a>VIEW MORE >></a></h3>
+              </div>
+            </div>
+
+            <div class="carousel-cell carousel-element-container bozo-bg">
+              <div class='flickity-details-container'>
+                <h2 class="show-title detail-reveal-element">BOZO</h2>
+                <p class="show-description detail-reveal-element">Forage try-hard tousled heirloom. Ethical iPhone offal, ramps cornhole biodiesel farm-to-table sriracha gentrify DIY synth single-origin coffee cray 3 wolf moon shabby chic. Food truck photo booth lyft 8-bit trust fund hella iPhone quinoa mustache pug edison bulb tumblr poutine.</p>
+                <h3 class="show-view-more detail-reveal-element"><a>VIEW MORE >></a></h3>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ####### CONTAINER WITH SHOW DETAILS - STARTS OFF SCREEN AND FADES IN WHILE SLIDING  (WAYPOINTS) ########  -->
+        <section class="about-me-container">
+          <div class="about-me-image-container">
+            <img class="about-me-image" src="images/david-headshot.jpg">
+          </div>
+          <div class="about-me-details-container" id="slide">
+            <h2 class="show-title"> ABOUT ME </h2>
+            <h3 class="about-me-name">David Allison</h3>
+            <p class="about-me-bio">Tumblr paleo gochujang shoreditch slow-carb, activated charcoal chambray mumblecore migas echo park hexagon jean shorts etsy. Pork belly ramps thundercats health goth lyft cred activated charcoal chillwave raclette 8-bit truffaut plaid. Unicorn vinyl cred jianbing readymade leggings YOLO. Keffiyeh shaman post-ironic succulents iceland palo santo tbh church-key snackwave portland banh mi. Banh mi forage wolf next level. Authentic pabst street art schlitz messenger bag photo booth cronut tilde stumptown etsy.</p>
+          </div>
+        </section>
+
+<!-- ################ DESIGN SELECTION GALLERY ##################### -->
+        <section class="gallery-main-section">
+
+          <div class="lighting-design-gallery-container">
+            <h2 class="gallery-title">LIGHTING DESIGNS</h2>
+            <div class="gallery-container lighting-design">
+               <div class="gallery-images secondhand-bg-2"><a><div class="image-overlay opacity-effect">Secondhand Hope</div></a></div>
+               <div class="gallery-images bozo-bg-2">BOZO</div>
+               <div class="gallery-images looking-glass-bg">Through the Looking Glass</div>
+               <div class="gallery-images crooked-bg">CROOKED</div>
+               <div class="gallery-images normal-magic-bg-2">Normal/Magic</div>
+            </div>
+
+        </section>
+
+
+
+
+
+
       </main>
-      <!-- <footer>
-        <h1>David Allison Lighting</h1>
-        <div>
-          <img class="twitter">
-          <img class="facebook">
+      <footer>
+        <h1 class="footer-logo">David Allison Lighting</h1>
+        <div class="social-media-elements-container">
+          <img class="twitter social-media-elements"src="images/social-media-logos/twitter-blue.png">
+          <img class="facebook social-media-elements" src="images/social-media-logos/facebook-blue.png">
+          <!-- <img class="instagram"> -->
+          <img class="linkedin social-media-elements" src="images/social-media-logos/linkedin-black.png">
         </div>
-      </footer> -->
+      </footer>
+
+
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+      </script>
+      <!-- <script src="js/flickity.pkgd.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.9/flickity.pkgd.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+      <script src="js/main.js"></script>
   </body>
-  </html>
+</html
