@@ -1,8 +1,48 @@
+/*David Allison Lighting
+Landing Page */
+
+
+
+/*EACH BACK GROUND IMAGE USED IN LIGHTING DESIGN PORTION */
+.secondhand-bg-2{
+  background-image: url("../images/secondhand-hope/secondhand-hope-1.jpg");
+}
+
+.normal-magic-bg-2{
+  background-image: url("../images/normal-magic/normal-magic-6.jpg");
+}
+
+.bozo-bg-2{
+  background-image: url("../images/bozo/bozo-2.jpg");
+}
+
+.crooked-bg{
+  background-image: url("../images/crooked/crooked-1.jpg");
+}
+.looking-glass-bg{
+  background-image: url("../images/through-the-looking-glass/through-the-looking-glass-2.jpg");
+}
+.sweet-charity-bg{
+  background-image: url("../images/sweet-charity.png");
+}
+.deadman-bg{
+  background-image: url("../images/deadmans.png");
+}
+.spring-awakening-bg{
+  background-image: url("../images/spring-awakening.png");
+}
+.raisin-bg{
+  background-image: url("../images/raisin.jpg")
+}
+
+
+
 body{
   color: white;
   background-color: #08080A;
   /*background:url("");*/
 }
+
 /*########################################
 ############### HEADER #################
 ########################################*/
@@ -48,6 +88,15 @@ header{
   pointer-events: none;
 }
 
+.logo-fade-out{
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+.logo-fade-out-active{
+  opacity:0;
+}
+
 /*###################################################################
 ################# MAIN/FLICKITY FLICKITY CAROUSEL ###################
 #####################################################################*/
@@ -59,9 +108,6 @@ header{
   justify-content: center;
 }
 
-.parallax--bg{
-  transition: 0.0s ease;
-}
 .viewing-container{
   font-family: 'Open Sans Condensed', sans-serif;
   height: 87vh;
@@ -92,7 +138,9 @@ header{
   background-image: url("../images/bozo/bozo-4.jpg");
 }
 
-/*THis is the containeris the part that carousels. Each image  and details will be contained in. */
+
+
+/*This is the container is the part that carousels. Each image  and details will be contained in. */
 .flickity-details-container{
   align-items: flex-end;
   background-color: rgba(64,64,64,0.6);
@@ -116,6 +164,7 @@ header{
   line-height: 1.2;
 }
 .show-view-more{
+  cursor:pointer;
   font-size: 23px;
   text-decoration: underline;
 }
@@ -132,6 +181,8 @@ header{
   font-weight: 300;
   height: 90vh;
   justify-content: space-around;
+  /*margin: 0 2.5vw;*/
+  margin-top: 0.5vh;
 }
 
 .about-me-image-container{
@@ -154,16 +205,22 @@ header{
   line-height: 1.2;
 }
 
+/*###########################################
+############  GALLERY SECTION ##############
+#############################################*/
+
+/*############## GALLERY POSITIONING #############*/
 .gallery-main-section{
   color: white;
   font-family:'Open Sans Condensed', sans-serif;
-  height: 200vh;
   margin: 0 2vw 7vh 2vw;
   width: 100%;
 }
 
+
+
 .lighting-design-gallery-container{
-  height: 30%;
+  height: 130vh;
   width:100%;
 }
 .gallery-title{
@@ -174,16 +231,17 @@ header{
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-  height: 80%;
-  /*margin: 0 1vw;*/
   justify-content: flex-start;
 }
 
+/*Gallery Images with overlay that comes in when the mouse is hovered over the image*/
 .gallery-images{
   background-position: center;
   background-size: cover;
+  /*border: 0.2px solid #e6e6e6;*/
+  border-radius:5px;
   cursor: pointer;
-  height: 100%;
+  height: 55vh;
   margin: 2vh 1vw;
   width: 22vw;
 }
@@ -193,9 +251,10 @@ header{
   background: white;
   color: black;
   display: flex;
+  font-family: 'Mrs.Sheppards', cursive;
+  font-size: 20px;
   height: 100%;
   justify-content: center;
-  p
   width: 100%;
 }
 
@@ -225,35 +284,38 @@ header{
 .looking-glass-bg{
   background-image: url("../images/through-the-looking-glass/through-the-looking-glass-2.jpg");
 }
-
-
-
-
-/*############# CALL TO ACTION #############*/
-.cta-section{
-  align-items: center;
-  background-color: #A0471F;
-  display: flex;
-  height: 10vh;
-  justify-content: center;
+.sweet-charity-bg{
+  background-image: url("../images/sweet-charity.png");
 }
-.cta-question{
-  color: black;
-  font-family:'Open Sans Condensed', sans-serif;
-  font-size: 30px;
-  margin:0 30px 0 0;
+.deadman-bg{
+  background-image: url("../images/deadmans.png");
 }
-.contact-me-button{
-  border: 3px solid black;
-  color:black;
-  font-family:'Open Sans Condensed', sans-serif;
-  font-size: 25px;
-  font-weight: 700;
-  height: 40px;
-  text-align: center;
-  width:15vw;
+.spring-awakening-bg{
+  background-image: url("../images/spring-awakening.png");
+}
+.raisin-bg{
+  background-image: url("../images/raisin.jpg")
 }
 
+/*############# ASSISTANT DESIGN STYLES #########*/
+/*Because I have essentially a fixed height on the gallery images*/
+
+.assistant-design-gallery-container{
+  /*height: 30%;*/
+  width:100vw;
+  margin-top: 5vh;
+}
+
+
+/*I intend to use waypoints in the future here to fade the gallery in and out, but it loads too slow right now to attempt that. */
+.gallery-effect{
+  opacity: 0;
+  transition: 1s ease-in-out;*/
+}
+
+.gallery-effect-active{
+  opacity: 1;
+}
 /*###################################
 ############## Footer #############
 ###################################*/
