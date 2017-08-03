@@ -164,9 +164,13 @@ header{
   line-height: 1.2;
 }
 .show-view-more{
+  /*color:white;*/
   cursor:pointer;
   font-size: 23px;
   text-decoration: underline;
+}
+.view-more-anchor{
+  color: white;
 }
 /*###########################################
 ############  ABOUT ME SECTION ##############
