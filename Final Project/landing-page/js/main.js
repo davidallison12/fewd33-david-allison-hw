@@ -37,7 +37,7 @@ var waypoint = new Waypoint({
     }
 
   },
-  offset: '30%'
+  offset: '60%'
 });
 
 var waypoint = new Waypoint({
@@ -51,7 +51,7 @@ var waypoint = new Waypoint({
     }
 
   },
-  offset: '50%'
+  offset: '60%'
 });
 
 // function galleryResize(){
